@@ -142,24 +142,26 @@ tr:hover td{background:#FCFBF9}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 
+@page{size:A4;margin:11mm}
 @media print{
   .topbar,.noprint{display:none!important}
-  body{background:#fff;font-size:13px}
-  .hero{padding-top:30px}
-  section{padding:26px 0}
-  .wrap{max-width:100%;padding:0 20px}
-  .case{box-shadow:none;page-break-inside:avoid;break-inside:avoid}
-  .sec-head,.case-head,.sub-head{page-break-after:avoid;break-after:avoid}
-  .quote,table,.steps,.vs-card,.stat-row,.note,.slot,.kpi-bar{page-break-inside:avoid;break-inside:avoid}
-  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;page-break-inside:auto}
-  .g-col{page-break-inside:auto;break-inside:auto}
-  .g-col h5,.g-col .g-sub{page-break-after:avoid;break-after:avoid}
-  .g-col img,.g-col .cap{page-break-inside:avoid;break-inside:avoid}
-  .g-col .cap{page-break-before:avoid;break-before:avoid}
-  .g-col img{max-height:520px;object-fit:contain}
+  html,body{background:#fff!important}
+  body{font-size:13px;line-height:1.7}
+  .hero{padding-top:2px;background:#fff}
+  .wrap{max-width:100%;padding:0}
+  section{padding:18px 0}
+  .sec-no{font-size:58px}
+  .sec-title{font-size:25px}
+  .case{padding:16px 20px;margin-bottom:16px;border:1px solid var(--line);box-shadow:none}
+  *{box-shadow:none!important;text-shadow:none!important}
+  a{color:inherit;text-decoration:none}
+  img{page-break-inside:avoid!important;break-inside:avoid!important}
+  .g-col img,.note img{max-height:78vh;max-width:100%;width:auto;margin:0 auto;display:block}
+  .cap{page-break-before:avoid!important;break-before:avoid!important}
+  .g-col h5,.g-col .g-sub{page-break-after:avoid!important;break-after:avoid!important}
+  .sec-head,.case-head,.sub-head,.quote,table,.steps,.note,.slot,.stat,.kpi-bar,.vs-card{page-break-inside:avoid;break-inside:avoid}
   .note-grid{grid-template-columns:repeat(4,1fr);gap:10px}
-  .note img{max-height:300px;object-fit:contain}
-  .grid2,.grid3{grid-template-columns:1fr 1fr}
+  .grid3{grid-template-columns:1fr 1fr}
   .reveal{opacity:1!important;transform:none!important}
   footer{margin-top:30px;padding:30px 0}
 }
@@ -262,21 +264,21 @@ tr:hover td{background:#FCFBF9}
         <div class="g-col">
           <h5>设计版面 · 内容主线</h5>
           <div class="g-sub">LAYOUT — 双主线入口与叙事页</div>
-          <img src="assets/nanyang_home.jpg" alt="平台首页" loading="lazy">
+          <img src="assets/nanyang_home.jpg" alt="平台首页">
           <div class="cap">平台首页 · 双主线入口与导语文案</div>
-          <img src="assets/nanyang_history.jpg" alt="革命回顾页" loading="lazy">
+          <img src="assets/nanyang_history.jpg" alt="革命回顾页">
           <div class="cap">革命回顾 · 「革命之母」章节（孙中山与南洋华侨革命史）</div>
-          <img src="assets/nanyang_anti.jpg" alt="抗日记忆页" loading="lazy">
+          <img src="assets/nanyang_anti.jpg" alt="抗日记忆页">
           <div class="cap">抗日记忆 · 「卖花救国」章节（舞女协会史料＋历史手稿影像）</div>
         </div>
         <div class="g-col">
           <h5>数据与档案 · 图谱 / 地图 / 档案</h5>
           <div class="g-sub">DATA — 人物图谱 / 地理分布 / 侨校档案</div>
-          <img src="assets/nanyang_map.jpg" alt="学校分布地图" loading="lazy">
+          <img src="assets/nanyang_map.jpg" alt="学校分布地图">
           <div class="cap">地理分布 · 学校分布交互地图（颜色＝学校类型，圆点＝学校）</div>
-          <img src="assets/nanyang_figure.jpg" alt="陈嘉庚人物页" loading="lazy">
+          <img src="assets/nanyang_figure.jpg" alt="陈嘉庚人物页">
           <div class="cap">人物图谱 · 陈嘉庚（结构化字段＋生平时间轴＋原句引言）</div>
-          <img src="assets/nanyang_schools.jpg" alt="侨校档案页" loading="lazy">
+          <img src="assets/nanyang_schools.jpg" alt="侨校档案页">
           <div class="cap">侨校档案 · 70 所学校列表（按创建时期与类型分类筛选）</div>
         </div>
       </div>
@@ -306,14 +308,14 @@ tr:hover td{background:#FCFBF9}
         <small>2026.7.18–9.5 区间内全部笔记的标题与文案由我撰写；播放为后台口径：累计 5W+，单条最高 1.4W</small>
       </div>
       <div class="note-grid">
-        <div class="note"><span class="flag flag-done">区间首日</span><h5>提取苹果灵魂！</h5><div class="likes">720<small>获赞</small></div><div class="meta">07-18 · 商品卡已售1751</div><img src="assets/xhs_apple.png" alt="提取苹果灵魂笔记实屏" loading="lazy"></div>
-        <div class="note"><span class="flag flag-done">线下官宣</span><h5>深圳宝藏手作杂货店，光光科学入驻升时SENS</h5><div class="likes">135<small>获赞</small></div><div class="meta">07-24 · 商品卡已售776</div><img src="assets/xhs_sens_store.png" alt="深圳入驻升时SENS笔记实屏" loading="lazy"></div>
-        <div class="note"><span class="flag flag-done">打包日常</span><h5>沉浸式打包（全息小鱼</h5><div class="likes">426<small>获赞</small></div><div class="meta">07-31 · 商品卡已售561</div><img src="assets/xhs_fish_pack.png" alt="沉浸式打包全息小鱼笔记实屏" loading="lazy"></div>
-        <div class="note"><span class="flag flag-done">过程叙事</span><h5>连蝴蝶都是手搓的？！全息的制作过程</h5><div class="likes">806<small>获赞</small></div><div class="meta">08-01 · 商品卡已售776</div><img src="assets/xhs_butterfly_process.png" alt="连蝴蝶都是手搓的笔记实屏" loading="lazy"></div>
-        <div class="note"><span class="flag flag-done">置顶 · 研发预热</span><h5>全息许愿池，研发中...</h5><div class="likes">1645<small>获赞</small></div><div class="meta">08-09 · 商品卡已售104</div><img src="assets/xhs_wishpool_rd.png" alt="全息许愿池研发中笔记实屏" loading="lazy"></div>
-        <div class="note"><span class="flag flag-done">模板方向落地</span><h5>把一朵不会枯萎的玫瑰，留在了相框里</h5><div class="likes">201<small>获赞</small></div><div class="meta">08-13 · 商品卡已售1239</div><img src="assets/xhs_rose_frame.png" alt="玫瑰相框笔记实屏" loading="lazy"></div>
-        <div class="note"><span class="flag flag-done">七夕当天发布</span><h5>为你沉浸式打包愿望</h5><div class="likes">716<small>获赞</small></div><div class="meta">08-19 · 商品卡已售104</div><img src="assets/xhs_wish_pack.png" alt="为你沉浸式打包愿望笔记实屏" loading="lazy"></div>
-        <div class="note"><span class="flag flag-done">节点延续</span><h5>沉浸式打包999朵玫瑰</h5><div class="likes">168<small>获赞</small></div><div class="meta">08-28 · 商品卡已售1239</div><img src="assets/xhs_rose_pack.png" alt="沉浸式打包999朵玫瑰笔记实屏" loading="lazy"></div>
+        <div class="note"><span class="flag flag-done">区间首日</span><h5>提取苹果灵魂！</h5><div class="likes">720<small>获赞</small></div><div class="meta">07-18 · 商品卡已售1751</div><img src="assets/xhs_apple.png" alt="提取苹果灵魂笔记实屏"></div>
+        <div class="note"><span class="flag flag-done">线下官宣</span><h5>深圳宝藏手作杂货店，光光科学入驻升时SENS</h5><div class="likes">135<small>获赞</small></div><div class="meta">07-24 · 商品卡已售776</div><img src="assets/xhs_sens_store.png" alt="深圳入驻升时SENS笔记实屏"></div>
+        <div class="note"><span class="flag flag-done">打包日常</span><h5>沉浸式打包（全息小鱼</h5><div class="likes">426<small>获赞</small></div><div class="meta">07-31 · 商品卡已售561</div><img src="assets/xhs_fish_pack.png" alt="沉浸式打包全息小鱼笔记实屏"></div>
+        <div class="note"><span class="flag flag-done">过程叙事</span><h5>连蝴蝶都是手搓的？！全息的制作过程</h5><div class="likes">806<small>获赞</small></div><div class="meta">08-01 · 商品卡已售776</div><img src="assets/xhs_butterfly_process.png" alt="连蝴蝶都是手搓的笔记实屏"></div>
+        <div class="note"><span class="flag flag-done">置顶 · 研发预热</span><h5>全息许愿池，研发中...</h5><div class="likes">1645<small>获赞</small></div><div class="meta">08-09 · 商品卡已售104</div><img src="assets/xhs_wishpool_rd.png" alt="全息许愿池研发中笔记实屏"></div>
+        <div class="note"><span class="flag flag-done">模板方向落地</span><h5>把一朵不会枯萎的玫瑰，留在了相框里</h5><div class="likes">201<small>获赞</small></div><div class="meta">08-13 · 商品卡已售1239</div><img src="assets/xhs_rose_frame.png" alt="玫瑰相框笔记实屏"></div>
+        <div class="note"><span class="flag flag-done">七夕当天发布</span><h5>为你沉浸式打包愿望</h5><div class="likes">716<small>获赞</small></div><div class="meta">08-19 · 商品卡已售104</div><img src="assets/xhs_wish_pack.png" alt="为你沉浸式打包愿望笔记实屏"></div>
+        <div class="note"><span class="flag flag-done">节点延续</span><h5>沉浸式打包999朵玫瑰</h5><div class="likes">168<small>获赞</small></div><div class="meta">08-28 · 商品卡已售1239</div><img src="assets/xhs_rose_pack.png" alt="沉浸式打包999朵玫瑰笔记实屏"></div>
       </div>
 
       <div class="sub-head" style="margin-top:22px">国外 · Instagram<small>INSTAGRAM · GGScience Lab</small></div>
@@ -329,49 +331,49 @@ tr:hover td{background:#FCFBF9}
         <div class="g-col">
           <h5>账号主页</h5>
           <div class="g-sub">PROFILE — 定位与视觉基调</div>
-          <img src="assets/ins_profile.png" alt="GGScience Lab 账号主页" loading="lazy">
+          <img src="assets/ins_profile.png" alt="GGScience Lab 账号主页">
           <div class="cap">3.1万 粉丝 · 32 帖子</div>
         </div>
         <div class="g-col">
           <h5>许愿池 · 主爆款</h5>
           <div class="g-sub">"Make a wish. A tiny wishing fountain, captured in holographic light. No coins needed — just pick a wish and keep it close. What would you wish for?"</div>
-          <img src="assets/ins_wish_main.png" alt="许愿池主爆款 Reel" loading="lazy">
+          <img src="assets/ins_wish_main.png" alt="许愿池主爆款 Reel">
           <div class="cap">赞 14.4万 · 评论 495 · 分享 1.7万</div>
         </div>
         <div class="g-col">
           <h5>原理向 · 苹果小片</h5>
           <div class="g-sub">"How does a flat piece of holographic film become a 3D illusion? …A little science. A little art. A whole lot of magic."</div>
-          <img src="assets/ins_apple.png" alt="苹果原理 Reel" loading="lazy">
+          <img src="assets/ins_apple.png" alt="苹果原理 Reel">
           <div class="cap">赞 7.5万 · 评论 283 · 分享 1.2万</div>
         </div>
         <div class="g-col">
           <h5>跨界向 · Rusty Lake</h5>
           <div class="g-sub">"A little piece of Rusty Lake, captured in holographic light. …Strange, mysterious, and a little unsettling — just the way we like it."</div>
-          <img src="assets/ins_rustylake.png" alt="Rusty Lake Reel" loading="lazy">
+          <img src="assets/ins_rustylake.png" alt="Rusty Lake Reel">
           <div class="cap">赞 3.6万 · 评论 184 · 分享 5336</div>
         </div>
         <div class="g-col">
           <h5>蝴蝶 · 情感向</h5>
           <div class="g-sub">"A butterfly that stays — even after it flies away"</div>
-          <img src="assets/ins_butterfly.png" alt="蝴蝶 Reel" loading="lazy">
+          <img src="assets/ins_butterfly.png" alt="蝴蝶 Reel">
           <div class="cap">赞 1.4万 · 评论 344</div>
         </div>
         <div class="g-col">
           <h5>许愿池 · 打包转化</h5>
           <div class="g-sub">"Packing a little wish, just for you. …available now through the link in bio."</div>
-          <img src="assets/ins_wish_pack.png" alt="许愿池打包 Reel" loading="lazy">
+          <img src="assets/ins_wish_pack.png" alt="许愿池打包 Reel">
           <div class="cap">赞 2.6万 · 分享 2453</div>
         </div>
         <div class="g-col">
           <h5>制作过程 · BTS</h5>
           <div class="g-sub">"Ever wondered how we make our holographic wishing fountain? …A little fountain, a little light, and a little wish."</div>
-          <img src="assets/ins_bts.png" alt="制作过程 Reel" loading="lazy">
+          <img src="assets/ins_bts.png" alt="制作过程 Reel">
           <div class="cap">赞 1.1万 · 分享 2932</div>
         </div>
         <div class="g-col">
           <h5>玫瑰 · 浪漫向</h5>
           <div class="g-sub">"A rose that never fades. …A little romance, frozen in time."</div>
-          <img src="assets/ins_rose.png" alt="玫瑰 Reel" loading="lazy">
+          <img src="assets/ins_rose.png" alt="玫瑰 Reel">
           <div class="cap">赞 1247 · 分享 114</div>
         </div>
       </div>
@@ -399,7 +401,7 @@ tr:hover td{background:#FCFBF9}
         <div class="g-col">
           <h5>已发布文章页实屏</h5>
           <div class="g-sub">What Is a Real Hologram? The Complete Guide to Optical Holography · 2026-07-18 上线</div>
-          <img src="assets/gg_article.jpg" alt="GGScience 已发布文章页实屏" loading="lazy">
+          <img src="assets/gg_article.jpg" alt="GGScience 已发布文章页实屏">
           <div class="cap">"Most products called 'holograms' today are not actually holograms."</div>
         </div>
         <div class="g-col">
@@ -419,29 +421,29 @@ tr:hover td{background:#FCFBF9}
         <div class="g-col">
           <h5>全息玫瑰摆件 · 详情页 6 屏</h5>
           <div class="g-sub">首屏 → 卖点 ×2 → 场景 ×3</div>
-          <img src="assets/taobao_rose_01.jpg" alt="全息玫瑰摆件详情页 首屏" loading="lazy">
+          <img src="assets/taobao_rose_01.jpg" alt="全息玫瑰摆件详情页 首屏">
           <div class="cap">首 屏</div>
-          <img src="assets/taobao_rose_02.jpg" alt="全息玫瑰摆件详情页 卖点1" loading="lazy">
+          <img src="assets/taobao_rose_02.jpg" alt="全息玫瑰摆件详情页 卖点1">
           <div class="cap">卖点 1</div>
-          <img src="assets/taobao_rose_03.jpg" alt="全息玫瑰摆件详情页 卖点2" loading="lazy">
+          <img src="assets/taobao_rose_03.jpg" alt="全息玫瑰摆件详情页 卖点2">
           <div class="cap">卖点 2</div>
-          <img src="assets/taobao_rose_04.jpg" alt="全息玫瑰摆件详情页 场景1" loading="lazy">
+          <img src="assets/taobao_rose_04.jpg" alt="全息玫瑰摆件详情页 场景1">
           <div class="cap">场景 1</div>
-          <img src="assets/taobao_rose_05.jpg" alt="全息玫瑰摆件详情页 场景2" loading="lazy">
+          <img src="assets/taobao_rose_05.jpg" alt="全息玫瑰摆件详情页 场景2">
           <div class="cap">场景 2</div>
-          <img src="assets/taobao_rose_06.jpg" alt="全息玫瑰摆件详情页 场景3" loading="lazy">
+          <img src="assets/taobao_rose_06.jpg" alt="全息玫瑰摆件详情页 场景3">
           <div class="cap">场景 3</div>
         </div>
         <div class="g-col">
           <h5>全息许愿池小片 · 详情页 4 屏</h5>
           <div class="g-sub">首屏 → 卖点 → 场景 ×2</div>
-          <img src="assets/taobao_wish_01.jpg" alt="全息许愿池小片详情页 首屏" loading="lazy">
+          <img src="assets/taobao_wish_01.jpg" alt="全息许愿池小片详情页 首屏">
           <div class="cap">首 屏</div>
-          <img src="assets/taobao_wish_02.jpg" alt="全息许愿池小片详情页 卖点" loading="lazy">
+          <img src="assets/taobao_wish_02.jpg" alt="全息许愿池小片详情页 卖点">
           <div class="cap">卖 点</div>
-          <img src="assets/taobao_wish_03.jpg" alt="全息许愿池小片详情页 场景1" loading="lazy">
+          <img src="assets/taobao_wish_03.jpg" alt="全息许愿池小片详情页 场景1">
           <div class="cap">场景 1</div>
-          <img src="assets/taobao_wish_04.jpg" alt="全息许愿池小片详情页 场景2" loading="lazy">
+          <img src="assets/taobao_wish_04.jpg" alt="全息许愿池小片详情页 场景2">
           <div class="cap">场景 2</div>
         </div>
       </div>
@@ -473,29 +475,29 @@ tr:hover td{background:#FCFBF9}
         <div class="g-col">
           <h5>原始脚本 · 前半（开场—条纹格栅）</h5>
           <div class="g-sub">SCRIPT 01–05 — 口播 × 卖点花字 × 画面三栏</div>
-          <img src="assets/anker_script_01.png" alt="安克脚本第1页" loading="lazy">
+          <img src="assets/anker_script_01.png" alt="安克脚本第1页">
           <div class="cap">01 开场 hook · 二次元快剪混剪</div>
-          <img src="assets/anker_script_02.png" alt="安克脚本第2页" loading="lazy">
+          <img src="assets/anker_script_02.png" alt="安克脚本第2页">
           <div class="cap">02 自问自答 · 产品首露 · 折纸波浪</div>
-          <img src="assets/anker_script_03.png" alt="安克脚本第3页" loading="lazy">
+          <img src="assets/anker_script_03.png" alt="安克脚本第3页">
           <div class="cap">03 波浪原理（写轮眼切换）· 手工痛点</div>
-          <img src="assets/anker_script_04.png" alt="安克脚本第4页" loading="lazy">
+          <img src="assets/anker_script_04.png" alt="安克脚本第4页">
           <div class="cap">04 升级条纹格栅 · 多帧动画</div>
-          <img src="assets/anker_script_05.png" alt="安克脚本第5页" loading="lazy">
+          <img src="assets/anker_script_05.png" alt="安克脚本第5页">
           <div class="cap">05 激光定位＋一体成型（卖点花字）</div>
         </div>
         <div class="g-col">
           <h5>原始脚本 · 后半（光栅卡—收尾）</h5>
           <div class="g-sub">SCRIPT 06–10 — 与已发布视频对应的二次元向版本</div>
-          <img src="assets/anker_script_06.png" alt="安克脚本第6页" loading="lazy">
+          <img src="assets/anker_script_06.png" alt="安克脚本第6页">
           <div class="cap">06 光栅卡原理 · 五条悟眼罩解封</div>
-          <img src="assets/anker_script_07.png" alt="安克脚本第7页" loading="lazy">
+          <img src="assets/anker_script_07.png" alt="安克脚本第7页">
           <div class="cap">07 观众反馈引用 · E1 直印光栅片</div>
-          <img src="assets/anker_script_08.png" alt="安克脚本第8页" loading="lazy">
+          <img src="assets/anker_script_08.png" alt="安克脚本第8页">
           <div class="cap">08 邪修组合 · 全息复合作品</div>
-          <img src="assets/anker_script_09.png" alt="安克脚本第9页" loading="lazy">
+          <img src="assets/anker_script_09.png" alt="安克脚本第9页">
           <div class="cap">09 收尾升华 · 打印的是光学规则</div>
-          <img src="assets/anker_script_10.png" alt="安克脚本第10页" loading="lazy">
+          <img src="assets/anker_script_10.png" alt="安克脚本第10页">
           <div class="cap">10 互动引导 · 五角色快剪回收</div>
         </div>
       </div>
@@ -503,13 +505,13 @@ tr:hover td{background:#FCFBF9}
         <div class="g-col">
           <h5>调研拆解</h5>
           <div class="g-sub">RESEARCH — 博主视频拆解与灵感提取</div>
-          <img src="assets/anker_research.png" alt="安克调研拆解文档截图" loading="lazy">
+          <img src="assets/anker_research.png" alt="安克调研拆解文档截图">
           <div class="cap">国内博主视频六维拆解（选题切角 / 叙事结构 / 可迁移点）· 重点视频逐一提取灵感</div>
         </div>
         <div class="g-col">
           <h5>已发布视频</h5>
           <div class="g-sub">PUBLISHED — 大嘎子 B站 · 2026-09-04 上线</div>
-          <img src="assets/bili_anker.png" alt="安克合作视频发布页实屏" loading="lazy">
+          <img src="assets/bili_anker.png" alt="安克合作视频发布页实屏">
           <div class="cap">《手搓会动的照片！3种纯物理动画一次学会》播放 14.3万 · 点赞 2.3万 · 投币 141 · 收藏 3673</div>
           <div style="display:flex;gap:14px;align-items:center;margin-top:14px;flex-wrap:wrap">
             <div class="quote" style="flex:1;min-width:220px">视频链接：<a href="https://www.bilibili.com/video/BV1Ndti6UETL/" target="_blank">bilibili.com/video/BV1Ndti6UETL</a><small>大嘎子 · 2026-09-04 上线 · 点击或扫码直达</small></div>
@@ -527,13 +529,13 @@ tr:hover td{background:#FCFBF9}
         <div class="g-col">
           <h5>脚本 · 第 01–03 段</h5>
           <div class="g-sub">SCRIPT — 开场钩子 / 停更悬念 / 交代去向</div>
-          <img src="assets/moving_script_01.png" alt="搬家脚本第一部分" loading="lazy">
+          <img src="assets/moving_script_01.png" alt="搬家脚本第一部分">
           <div class="cap">段落 × 口播 × 画面/剪辑 × 屏幕文字 四栏结构</div>
         </div>
         <div class="g-col">
           <h5>脚本 · 第 04–07 段</h5>
           <div class="g-sub">SCRIPT — 参观动线与制作流程</div>
-          <img src="assets/moving_script_02.png" alt="搬家脚本第二部分" loading="lazy">
+          <img src="assets/moving_script_02.png" alt="搬家脚本第二部分">
           <div class="cap">房间顺序＝制作流程：草图 → 模型 → 手搓设备，全片不点破</div>
         </div>
       </div>
